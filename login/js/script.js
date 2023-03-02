@@ -1,23 +1,23 @@
 let user = [
-	{
-		cpf: 12345678910,
-		senha: 'coxinha123',
-	},
+  {
+    cpf: '12345678910',
+    senha: 'coxinha123',
+  },
 ];
 
 const padraoCpf = /^[0-9]{3}.?[0-9]{3}.?[0-9]{3}-?[0-9]{2}$/;
-let cpf = document.querySelector('#cpf').value;
-let password = document.querySelector('#password').value;
+
 const loginButton = document.querySelector('.login-btn');
-// Verificar o cpf
-// if (!padraoCpf.test(cpf)) throw new Error('CPF inválido');
 
-loginButton.addEventListener('click', el => {
-	el.preventDefault();
-
-	if (cpf === '' || password === '' || !padraoCpf.test(cpf)) {
-		console.log('Algum dos campos está inválido, preencha-os corretamente');
-	} else {
-		console.log('login feito com sucesso');
-	}
+loginButton.addEventListener('click', (el) => {
+  let cpf = document.getElementById('cpf').value;
+  let password = document.getElementById('password').value;
+  el.preventDefault();
+  if (cpf === '' || password === '' || !padraoCpf.test(cpf)) {
+    alert('Algum dos campos está inválido, preencha-os corretamente');
+  } else if (cpf == '12345678910' && password == 'coxinha123') {
+    window.location.href = '../logado/index.html';
+  } else {
+    alert('Cliente não encontrado, verifique os dados');
+  }
 });
