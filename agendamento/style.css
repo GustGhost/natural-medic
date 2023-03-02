@@ -1,192 +1,192 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;800&display=swap');
 
 * {
-  padding: 0;
-  margin: 0;
+	padding: 0;
+	margin: 0;
 }
 header {
-  display: flex;
-  background-color: #f1f1f1a1;
-  height: 100px;
-  width: 100%;
-  top: 0;
-  position: absolute;
+	display: flex;
+	background-color: #f1f1f1a1;
+	height: 100px;
+	width: 100%;
+	top: 0;
+	position: absolute;
 }
 header img {
-  width: 150px;
-  position: absolute;
-  top: 5px;
-  left: 10px;
+	width: 150px;
+	position: absolute;
+	top: 5px;
+	left: 10px;
 }
 
 .linksHeader {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
-  font-family: 'Poppins', sans-seri;
-  font-weight: 500;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: center;
+	font-family: 'Poppins', sans-seri;
+	font-weight: 500;
 }
 
 header a {
-  margin: 0px 20px;
-  color: #008037;
-  text-decoration: none;
+	margin: 0px 20px;
+	color: #008037;
+	text-decoration: none;
 }
 
 header a:hover {
-  color: #000;
-  transform: scale(1.1);
+	color: #000;
+	transform: scale(1.1);
 }
 
-header a:nth-child(4) {
-  color: #f1f1f1;
-  background-color: #008037;
-  width: 120px;
-  height: 50px;
-  font-size: large;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  border-radius: 15px;
-  margin: 0px 40px;
+.loginBtn {
+	color: #f1f1f1;
+	background-color: #008037;
+	width: 120px;
+	height: 50px;
+	font-size: large;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	border-radius: 15px;
+	margin: 0px 40px;
 }
 
-header a:nth-child(4):hover {
-  background-color: #000000;
-  transition: 0.5s;
-  color: #ffffff;
+.loginBtn:hover {
+	background-color: #000000;
+	transition: 0.5s;
+	color: #ffffff;
 }
 .footer-sup {
-  display: flex;
-  font-size: 20px;
-  align-items: center;
-  border-top: 1px solid green;
-  border-bottom: 1px solid green;
-  height: 200px;
+	display: flex;
+	font-size: 20px;
+	align-items: center;
+	border-top: 1px solid green;
+	border-bottom: 1px solid green;
+	height: 200px;
 }
 
 .footer-sup img {
-  width: 200px;
-  margin-right: 100px;
+	width: 200px;
+	margin-right: 100px;
 }
 .footer-sup h3 {
-  font-size: 25px;
-  color: #2b4d3f;
+	font-size: 25px;
+	color: #2b4d3f;
 }
 
 .footer-sup p {
-  color: #3a8365;
-  margin-top: 10px;
-  padding-right: 15px;
+	color: #3a8365;
+	margin-top: 10px;
+	padding-right: 15px;
 }
 
 .footer-inf {
-  background-color: #109c62;
-  height: 100%;
-  padding: 50px 100px 100px 100px;
-  display: flex;
-  font-size: 20px;
-  justify-content: space-around;
+	background-color: #109c62;
+	height: 100%;
+	padding: 50px 100px 100px 100px;
+	display: flex;
+	font-size: 20px;
+	justify-content: space-around;
 }
 .footer-inf h3 {
-  color: #f1f1f1;
-  font-size: 30px;
-  margin-bottom: 20px;
+	color: #f1f1f1;
+	font-size: 30px;
+	margin-bottom: 20px;
 }
 
 .footer-inf p {
-  margin-top: 10px;
-  color: #f1f1f1;
-  background-color: #109c62;
+	margin-top: 10px;
+	color: #f1f1f1;
+	background-color: #109c62;
 }
 .footer-inf a {
-  text-decoration: none;
+	text-decoration: none;
 }
 
 .formulario {
-  background-color: #f1f1f1;
-  height: 500px;
-  margin: 50px 100px;
-  border: solid;
-  border-width: 2px;
-  border-radius: 60px;
-  border-color: #109c62;
-  padding: 30px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  gap: 10px;
-  align-items: center;
+	background-color: #f1f1f1;
+	height: 500px;
+	margin: 50px 100px;
+	border: solid;
+	border-width: 2px;
+	border-radius: 60px;
+	border-color: #109c62;
+	padding: 30px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	gap: 10px;
+	align-items: center;
 }
 
 form h1 {
-  margin-left: 150px;
-  margin-top: 150px;
-  font-family: 'Poppins', sans-seri;
-  color: #109c62;
+	margin-left: 150px;
+	margin-top: 150px;
+	font-family: 'Poppins', sans-seri;
+	color: #109c62;
 }
 
 .input {
-  max-width: 100%;
-  padding: 16px 8px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #109c62;
-  box-sizing: border-box;
-  border-width: 2px;
-  border-radius: 100px;
-  width: 500px;
+	max-width: 100%;
+	padding: 16px 8px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #109c62;
+	box-sizing: border-box;
+	border-width: 2px;
+	border-radius: 100px;
+	width: 500px;
 }
 input[type='text']::placeholder {
-  font-family: 'Poppins', sans-seri;
+	font-family: 'Poppins', sans-seri;
 }
 
 .tituloInput {
-  font-family: 'Poppins', sans-seri;
-  color: #109c62;
-  margin-left: 30px;
+	font-family: 'Poppins', sans-seri;
+	color: #109c62;
+	margin-left: 30px;
 }
 
 select,
 input[type='datetime-local'] {
-  font-family: 'Poppins', sans-seri;
-  color: #757575;
+	font-family: 'Poppins', sans-seri;
+	color: #757575;
 }
 
 .enviar {
-  width: 200px;
-  height: 50px;
-  display: inline-block;
-  border: 1px solid #109c62;
-  box-sizing: border-box;
-  border-width: 2px;
-  border-radius: 100px;
-  outline: 0;
-  background-color: #ffffff;
-  font-family: 'Poppins', sans-seri;
+	width: 200px;
+	height: 50px;
+	display: inline-block;
+	border: 1px solid #109c62;
+	box-sizing: border-box;
+	border-width: 2px;
+	border-radius: 100px;
+	outline: 0;
+	background-color: #ffffff;
+	font-family: 'Poppins', sans-seri;
 }
 
 input[type='submit']:hover {
-  background-color: #109c62;
-  color: #ffffff;
+	background-color: #109c62;
+	color: #ffffff;
 }
 
 input[type='submit']:focus {
-  background-color: #2b4d3f;
-  color: #ffffff;
-  border-color: #2b4d3f;
+	background-color: #2b4d3f;
+	color: #ffffff;
+	border-color: #2b4d3f;
 }
 
 textarea {
-  max-width: 100%;
-  font-size: 20px;
-  padding: 0px 20px;
-  margin: 8px 0;
-  border: 1px solid #109c62;
-  border-width: 2px;
-  border-radius: 50px;
-  width: 500px;
-  font-family: 'Poppins', sans-seri;
+	max-width: 100%;
+	font-size: 20px;
+	padding: 0px 20px;
+	margin: 8px 0;
+	border: 1px solid #109c62;
+	border-width: 2px;
+	border-radius: 50px;
+	width: 500px;
+	font-family: 'Poppins', sans-seri;
 }
