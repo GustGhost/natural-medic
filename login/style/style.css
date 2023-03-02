@@ -84,7 +84,8 @@ header a:hover {
 	font-size: 25px;
 	border-bottom: #f1f1f1 1px solid;
 }
-.login input {
+
+.input-ptrn {
 	background: none;
 	border-bottom: 0.5px solid white;
 	border-top: none;
@@ -95,23 +96,52 @@ header a:hover {
 	margin: 8px;
 	width: 350px;
 }
+
+.input-ptrn:focus {
+	outline: none;
+}
+
 .login input::placeholder {
 	color: rgb(219, 213, 213);
 	font-size: 15px;
 }
-.login a {
-	font-size: 15px;
-	text-decoration: none;
-	color: #f1f1f1;
+.login-btn {
 	background-color: #109c62;
-	padding: 10px 20px;
 	border-radius: 6px;
 	border: none;
+	display: flex;
+	height: 40px;
+	width: 70px;
+	justify-content: center;
 }
-.login a:hover {
+.login-btn:hover {
 	background-color: transparent;
 	border: 0.5px solid white;
 	cursor: pointer;
+}
+.login-btn a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	font-size: 15px;
+	color: #f1f1f1;
+	text-decoration: none;
+}
+
+/* 
+Área de edição do input number */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+	-moz-appearance: textfield;
 }
 
 .footer-sup {
