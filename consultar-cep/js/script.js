@@ -150,19 +150,47 @@ submit.addEventListener('click', (e) => {
   }
 });
 
+const date = new Date();
+let day = date.getDay();
+let year = date.getFullYear();
+const mesesAno = [
+  'JAN',
+  'FEV',
+  'MAR',
+  'ABR',
+  'MAI',
+  'JUN',
+  'JUL',
+  'AGO',
+  'SET',
+  'OUT',
+  'NOV',
+  'DEZ',
+];
+let month = mesesAno[date.getMonth()];
+
 const chamarComentarios = () => {
   for (let i = ultimoIndiceExibido; i < dados.length; i++) {
     let div = document.createElement('div');
     div.innerHTML = `<div class="card" style="width: 18rem;">                
 		<div class="card-body">
-		  <h5 class="card-title">Paciente: ${dados[i].name}</h5>
+      <ion-icon class="icon-profile" name="person-circle-outline" ></ion-icon>
+      <div>
+        <h5 class="card-title">${dados[i].name}</h5>
+        <p class="card-date">${day}${month}, ${year} </p>
+      </div>
 		</div>
 		<ul class="list-group list-group-flush">
 		<li class="list-group-item">Idade: ${dados[i].age}</li>
 		<li class="list-group-item">Email: ${dados[i].email}</li>
 		<li class="list-group-item">Médico: ${dados[i].nameMedic}</li>
 		<li class="list-group-item">Comentário: ${dados[i].comment}</li>
-		</ul>                  
+		</ul>
+    <div class="div-icon" >
+      <ion-icon  class="icon-like" name="thumbs-up-outline"></ion-icon>
+      <ion-icon class="icon-deslike" name="thumbs-down-outline"></ion-icon>
+      <ion-icon class="icon-love" name="heart-outline"></ion-icon>
+    </div>              
 		</div>
 		</div> <hr/>`;
     comments.appendChild(div);

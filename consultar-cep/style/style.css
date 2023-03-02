@@ -124,6 +124,114 @@ input[type='number'] {
 	-moz-appearance: textfield;
 }
 
+.card {
+	border-radius: 10px;
+}
+.content-comment {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.card-date {
+	font-size: 12px;
+}
+
+.card-body {
+	background: #198754;
+	color: #ffffff;
+	display: flex;
+	align-items: center;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+}
+
+.div-icon {
+	display: flex;
+	padding: 10px;
+	gap: 20px;
+}
+
+.icon-profile {
+	font-size: 64px;
+	cursor: pointer;
+}
+
+.icon-like, .icon-deslike, .icon-love {
+	font-size: 24px;
+	cursor: pointer;
+}
+
+.icon-like:hover {
+ 	color: blue;
+}
+
+.icon-love:hover {
+ 	color: red;
+}
+
+.icon-deslike:hover	{
+	color: darkorange;
+}
+.content-posts {
+	display: flex;
+	gap: 10px;
+	flex-wrap: wrap;
+	padding-left: 82px;
+	padding-right: 82px;
+	margin-top: 30px;
+	margin-bottom: 60px;
+}
+
+
+.footer-sup {
+	display: flex;
+	font-size: 20px;
+	align-items: center;
+	border-top: 1px solid green;
+	border-bottom: 1px solid green;
+	height: 200px;
+}
+
+.footer-sup img {
+	width: 200px;
+	margin-right: 100px;
+}
+.footer-sup h3 {
+	font-size: 25px;
+	color: #2b4d3f;
+}
+
+.footer-sup p {
+	color: #3a8365;
+	margin-top: 10px;
+	padding-right: 15px;
+}
+
+.footer-inf {
+	background-color: #109c62;
+	height: 100%;
+	padding: 50px 100px 100px 100px;
+	display: flex;
+	font-size: 20px;
+	justify-content: space-around;
+}
+.footer-inf h3 {
+	color: #f1f1f1;
+	font-size: 30px;
+	margin-bottom: 20px;
+}
+
+.footer-inf p {
+	margin-top: 10px;
+	color: #f1f1f1;
+	background-color: #109c62;
+}
+.footer-inf a {
+	text-decoration: none;
+}
+
+
 @media (max-width: 768px) {
 	header {
 		flex-direction: column;
