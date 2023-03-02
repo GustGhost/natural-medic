@@ -23,14 +23,14 @@ const pesquisarCep = async () => {
 					document.getElementById(
 						'result'
 					).innerHTML = `<div class="card" style="width: 18rem;">
-            <div class="card-body">
-              <h5 class="card-title">Endereço da Clínica</h5>
-            </div>
-            <ul class="list-group list-group-flush">
-            <li class="list-group-item"><b>Bairro:</b> ${address.bairro}</li>
-              <li class="list-group-item"><b>Logradouro:</b> ${
-								address.logradouro
-							}</li>
+					<div class="card-body">
+					<h5 class="card-title">Endereço da Clínica</h5>
+					</div>
+					<ul class="list-group list-group-flush">
+					<li class="list-group-item"><b>Bairro:</b> ${address.bairro}</li>
+              		<li class="list-group-item"><b>Logradouro:</b> ${
+						address.logradouro
+					}</li>
                <li class="list-group-item"><b>Bairro:</b> ${address.bairro}</li>
            ${
 							address.complemento
@@ -108,3 +108,27 @@ btnListPeople.addEventListener('click', () => {
 			alert(error.message);
 		});
 });
+
+
+// actions form
+const submit = document.getElementById('enviar');
+submit.addEventListener('click', (e) => {
+	e.preventDefault();
+	
+	let name = document.getElementById('nome').value;
+	let age = document.getElementById('idade').value;
+	let email = document.getElementById('email').value;
+	let nameMedic = document.getElementById('nomeDoMedico').value;
+	let message = document.getElementById('mensagem').value;
+
+	if (name === '' || age === '' || email === '' || nameMedic === '' || message === '') {
+		alert('algum campo precisa ser preenchido!')
+	} else {
+		document.getElementById('nome').value = "";
+		document.getElementById('idade').value = "";
+		document.getElementById('email').value = "";
+		document.getElementById('nomeDoMedico').value = "";
+		document.getElementById('mensagem').value = "";
+	}
+	
+})

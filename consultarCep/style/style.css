@@ -102,6 +102,24 @@ header button:hover {
 	color: rgb(255, 63, 63);
 }
 
+.content-form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 100px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 @media (max-width: 768px) {
 	header {
 		flex-direction: column;
