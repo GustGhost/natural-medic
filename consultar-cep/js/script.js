@@ -151,9 +151,7 @@ submit.addEventListener('click', (e) => {
 });
 
 const date = new Date();
-console.log(date);
 let day = date.getDate();
-console.log(day);
 let year = date.getFullYear();
 const mesesAno = [
   'JAN',
