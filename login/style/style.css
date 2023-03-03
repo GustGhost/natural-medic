@@ -1,42 +1,82 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;800&display=swap');
 
+main {
+	width: 100%;
+	height: 100%;
+}
 * {
 	padding: 0;
-	font-family: 'Poppins', sans-seri;
 	margin: 0;
-}
-header {
-	display: flex;
-	background-color: #f1f1f1a1;
-	height: 100px;
-	width: 100%;
-}
-header img {
-	width: 150px;
-	position: absolute;
-	top: 5px;
-	left: 10px;
+	box-sizing: border-box;
+	list-style: none;
 }
 
-.linksHeader {
+body {
 	width: 100%;
+	height: 100%;
+	font-family: 'Poppins', sans-serif;
+	overflow-x: hidden;
+}
+
+button {
+	all: unset;
+	background-color: #008037;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+p {
+	margin-bottom: 0px;
+}
+
+ul {
+	padding-left: 0px;
+}
+
+header {
 	display: flex;
-	flex-direction: row;
-	justify-content: flex-end;
+	justify-content: space-between;
 	align-items: center;
-	font-family: 'Poppins', sans-seri;
+	background-color: #f1f1f1a1;
+	padding: 0.5rem;
+}
+
+header > a img {
+	width: 100%;
+}
+
+header > a {
+	min-width: 8rem;
+	max-width: 9rem;
+	width: 20%;
+}
+
+header .linksHeader {
+	display: flex;
+	gap: 1.6rem;
 	font-weight: 500;
 }
 
-header a {
-	margin: 0px 20px;
-	color: #008037;
-	text-decoration: none;
+header .linksHeader a {
+	transition: all linear 0.3s;
 }
 
-header a:hover {
+header .linksHeader a:hover {
 	color: #000;
 	transform: scale(1.1);
+}
+
+header button {
+	color: #ffffff;
+	padding: 0.5rem 1rem;
+	border-radius: 1rem;
+}
+
+header button:hover {
+	opacity: 80%;
+	transition: 0.2s;
 }
 
 .loginBtn {
@@ -75,14 +115,16 @@ header a:hover {
 }
 
 .login form {
-	padding: 70px;
+	/* padding: 70px; */
 }
 .login h2 {
-	position: absolute;
+	display: flex;
+	justify-content: flex-end;
+	/* position: absolute;
 	top: 350px;
-	left: 780px;
+	left: 780px; */
+
 	font-size: 25px;
-	border-bottom: #f1f1f1 1px solid;
 }
 
 .input-ptrn {
@@ -144,18 +186,26 @@ input[type='number'] {
 	-moz-appearance: textfield;
 }
 
-.footer-sup {
-	display: flex;
-	font-size: 20px;
-	align-items: center;
-	border-top: 1px solid green;
-	border-bottom: 1px solid green;
-	height: 200px;
+footer {
+	width: 100%;
+	height: 100%;
 }
 
-.footer-sup img {
-	width: 200px;
-	margin-right: 100px;
+.footer-sup {
+	display: flex;
+	/* flex-direction: column; */
+	font-size: 20px;
+	gap: 10px;
+	align-items: start;
+	border-top: 1px solid green;
+	border-bottom: 1px solid green;
+	padding: 1rem 0rem;
+}
+
+.footer-sup > img {
+	display: flex;
+	align-self: center;
+	width: 150px;
 }
 .footer-sup h3 {
 	font-size: 25px;
@@ -167,14 +217,21 @@ input[type='number'] {
 	margin-top: 10px;
 	padding-right: 15px;
 }
+.footer-divs {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
 
 .footer-inf {
 	background-color: #109c62;
-	height: 100%;
-	padding: 50px 100px 100px 100px;
+	/* padding: 50px 100px 100px 100px; */
 	display: flex;
 	font-size: 20px;
 	justify-content: space-around;
+	padding: 1rem;
 }
 .footer-inf h3 {
 	color: #f1f1f1;
@@ -187,7 +244,50 @@ input[type='number'] {
 	color: #f1f1f1;
 	background-color: #109c62;
 }
-.footer-inf a,
-.tags a {
+.footer-inf a {
 	text-decoration: none;
+}
+
+@media (max-width: 768px) {
+	header {
+		flex-direction: column;
+		height: 100%;
+		gap: 0.3rem;
+	}
+	.linksHeader {
+		display: flex;
+		flex-direction: column;
+	}
+	.linksHeader > a {
+		text-align: center;
+		font-size: 0.9rem;
+	}
+	header > button {
+		padding: 0.3rem 0.7rem;
+		font-size: 1rem;
+	}
+	.login h2 {
+		justify-content: center;
+	}
+
+	.footer-sup {
+		flex-direction: column;
+		gap: 15px;
+		padding: 1rem;
+	}
+	.footer-inf {
+		flex-direction: column;
+		gap: 1.6rem;
+	}
+	.footer-info-ptrn {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.footer-info-ptrn > a {
+		text-align: center;
+	}
+	.input-ptrn {
+		width: 90%;
+	}
 }
