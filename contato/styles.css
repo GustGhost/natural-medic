@@ -1,157 +1,157 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;800&display=swap');
 
 * {
-	padding: 0;
-	margin: 0;
+  padding: 0;
+  margin: 0;
 }
 header {
-	display: flex;
-	background-color: #f1f1f1a1;
-	height: 100px;
-	top: 0;
-	width: 100%;
-	position: absolute;
+  display: flex;
+  background-color: #f1f1f1a1;
+  height: 100px;
+  top: 0;
+  width: 100%;
+  position: absolute;
 }
 header img {
-	width: 150px;
-	position: absolute;
-	top: 5px;
-	left: 10px;
+  width: 150px;
+  position: absolute;
+  top: 5px;
+  left: 10px;
 }
 
 .linksHeader {
-	width: 100%;
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-end;
-	align-items: center;
-	font-family: 'Poppins', sans-seri;
-	font-weight: 500;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  font-family: 'Poppins', sans-seri;
+  font-weight: 500;
 }
 
 header a {
-	margin: 0px 20px;
-	color: #008037;
-	text-decoration: none;
+  margin: 0px 20px;
+  color: #008037;
+  text-decoration: none;
 }
 
 header a:hover {
-	color: #000;
-	transform: scale(1.1);
+  color: #000;
+  transform: scale(1.1);
 }
 
 .loginBtn {
-	color: #f1f1f1;
-	background-color: #008037;
-	width: 120px;
-	height: 50px;
-	font-size: large;
-	align-items: center;
-	justify-content: center;
-	display: flex;
-	border-radius: 15px;
-	margin: 0px 40px;
+  color: #f1f1f1;
+  background-color: #008037;
+  width: 120px;
+  height: 50px;
+  font-size: large;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-radius: 15px;
+  margin: 0px 40px;
 }
 
 .loginBtn:hover {
-	background-color: #000000;
-	transition: 0.5s;
-	color: #ffffff;
+  background-color: #000000;
+  transition: 0.5s;
+  color: #ffffff;
 }
 .contato {
-	font-family: 'Poppins', sans-seri;
-	height: 800px;
-	padding: 180px 0px 0px 200px;
+  font-family: 'Poppins', sans-seri;
+  height: 800px;
+  padding: 180px 0px 0px 200px;
 }
 
 .contato h1 {
-	font-size: 40px;
-	color: #008037;
+  font-size: 40px;
+  color: #008037;
 }
 
 .contato h2 {
-	margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 .contato .plano {
-	margin-top: 50px;
+  margin-top: 50px;
 }
 .contato p {
-	margin: 10px;
-	font-size: 20px;
+  margin: 10px;
+  font-size: 20px;
 }
 
 .contato ion-icon {
-	margin-top: 10px;
-	font-size: 40px;
-	margin-left: 10px;
+  margin-top: 10px;
+  font-size: 40px;
+  margin-left: 10px;
 }
 
 .contato ion-icon:hover {
-	color: #008037;
-	cursor: pointer;
+  color: #008037;
+  cursor: pointer;
 }
 .contato span:nth-child(5) {
-	margin: 5px 0 0 -5px;
-	font-size: 15px;
+  margin: 5px 0 0 -5px;
+  font-size: 15px;
 }
 
 .contato .clinica {
-	margin-top: 100px;
+  margin-top: 100px;
 }
 
 .contato .clinica span:nth-child(6) {
-	font-size: 15px;
-	margin: 5px 0 0 -5px;
+  font-size: 15px;
+  margin: 5px 0 0 -5px;
 }
 
 .contato .trabalhe {
-	margin-top: 40px;
-	padding: 10px 0;
+  margin-top: 40px;
+  padding: 10px 0;
 }
 
 .footer-sup {
-	display: flex;
-	font-size: 20px;
-	align-items: center;
-	border-top: 1px solid green;
-	border-bottom: 1px solid green;
-	height: 200px;
+  display: flex;
+  font-size: 20px;
+  align-items: center;
+  border-top: 1px solid green;
+  border-bottom: 1px solid green;
+  height: 200px;
 }
 
 .footer-sup img {
-	width: 200px;
-	margin-right: 100px;
+  width: 200px;
+  margin-right: 100px;
 }
 .footer-sup h3 {
-	font-size: 25px;
-	color: #2b4d3f;
+  font-size: 25px;
+  color: #2b4d3f;
 }
 
 .footer-sup p {
-	color: #3a8365;
-	margin-top: 10px;
-	padding-right: 15px;
+  color: #3a8365;
+  margin-top: 10px;
+  padding-right: 15px;
 }
 
 .footer-inf {
-	background-color: #109c62;
-	height: 100%;
-	padding: 50px 100px 100px 100px;
-	display: flex;
-	font-size: 20px;
-	justify-content: space-around;
+  background-color: #109c62;
+  height: 100%;
+  padding: 50px 100px 100px 100px;
+  display: flex;
+  font-size: 20px;
+  justify-content: space-around;
 }
 .footer-inf h3 {
-	color: #f1f1f1;
-	font-size: 30px;
-	margin-bottom: 20px;
+  color: #f1f1f1;
+  font-size: 30px;
+  margin-bottom: 20px;
 }
 
 .footer-inf p {
-	margin-top: 10px;
-	color: #f1f1f1;
-	background-color: #109c62;
+  margin-top: 10px;
+  color: #f1f1f1;
+  background-color: #109c62;
 }
 .footer-inf a {
-	text-decoration: none;
+  text-decoration: none;
 }
