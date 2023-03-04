@@ -63,7 +63,7 @@ form input[type='button']:hover {
 	background-color: #165a3e;
 	cursor: pointer;
 }
-.footer-sup {
+/* .footer-sup {
 	display: flex;
 	font-size: 20px;
 	align-items: center;
@@ -108,4 +108,4 @@ form input[type='button']:hover {
 }
 .footer-inf a {
 	text-decoration: none;
-}
+} */

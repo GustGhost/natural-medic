@@ -1,0 +1,90 @@
+.card-img {
+	width: 100%;
+	height: auto;
+	border-radius: 10px;
+}
+
+main {
+	width: 100%;
+	height: 100%;
+}
+
+.first-section {
+	background-image: url(../../img/sobre.png);
+	background-color: #31975d;
+	/* background-size: cover; */
+	background-repeat: no-repeat;
+	opacity: 83%;
+}
+.container {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	padding: 3rem 0;
+	justify-content: space-around;
+}
+.cards {
+	display: flex;
+	gap: 3rem;
+}
+.card {
+	max-width: 15rem;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	/* #31975d */
+	border-radius: 10px;
+}
+
+.card > .content {
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1rem;
+}
+.card > .content > p {
+	text-align: center;
+}
+
+.image {
+	height: 50%;
+}
+
+.card-title {
+	font-size: 1rem;
+}
+.card-btn {
+	display: flex;
+	width: 70%;
+	justify-content: center;
+	align-items: center;
+	font-weight: 400;
+	background-color: #31975d;
+	border: none;
+	border-radius: 10px;
+	color: white;
+	height: 2rem;
+	transition: all linear 0.3s;
+}
+.card-btn > a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+}
+
+.card-btn:hover {
+	background-color: #1c683d;
+}
+
+.second-section {
+	width: 100%;
+	height: 100%;
+	background-color: #31975d;
+	color: white;
+	padding: 1rem 2rem;
+	font-size: 1.3rem;
+}

@@ -1,115 +1,57 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;800&display=swap');
-
-header {
-  display: flex;
-  background-color: #f1f1f1a1;
-  height: 100px;
-  top: 0;
-  width: 100%;
-  position: absolute;
-}
-
 .contato {
-  font-family: 'Poppins', sans-seri;
-  height: 800px;
-  padding: 180px 0px 0px 200px;
+	font-family: 'Poppins', sans-seri;
+	height: 800px;
+	padding: 180px 0px 0px 200px;
 }
 
 .contato h1 {
-  font-size: 40px;
-  color: #008037;
+	font-size: 40px;
+	color: #008037;
 }
 
 .contato h2 {
-  margin-bottom: 10px;
-  color: #008037;
+	margin-bottom: 10px;
+	color: #008037;
 }
 .contato .plano {
-  margin-top: 50px;
-  width: 406px;
+	margin-top: 50px;
+	width: 406px;
 }
 .contato p {
-  margin: 10px;
-  font-size: 20px;
+	margin: 10px;
+	font-size: 20px;
 }
 
 .contato ion-icon {
-  margin-top: 10px;
-  font-size: 40px;
-  margin-left: 10px;
+	margin-top: 10px;
+	font-size: 40px;
+	margin-left: 10px;
 }
 
 .contato ion-icon:hover {
-  color: #008037;
-  cursor: pointer;
+	color: #008037;
+	cursor: pointer;
 }
 .contato span:nth-child(5) {
-  margin: 5px 0 0 -5px;
-  font-size: 15px;
+	margin: 5px 0 0 -5px;
+	font-size: 15px;
 }
 
 .contato .clinica {
-  margin-top: 48px;
-  margin-left: 30px;
+	margin-top: 48px;
+	margin-left: 30px;
 }
 
 .contato .clinica span:nth-child(6) {
-  font-size: 15px;
-  margin: 5px 0 0 -5px;
+	font-size: 15px;
+	margin: 5px 0 0 -5px;
 }
 
 .contato .trabalhe {
-  margin-top: 40px;
-  padding: 10px 0;
-}
-
-.footer-sup {
-  display: flex;
-  font-size: 20px;
-  align-items: center;
-  border-top: 1px solid green;
-  border-bottom: 1px solid green;
-  height: 200px;
-}
-
-.footer-sup img {
-  width: 200px;
-  margin-right: 100px;
-}
-.footer-sup h3 {
-  font-size: 25px;
-  color: #2b4d3f;
-}
-
-.footer-sup p {
-  color: #3a8365;
-  margin-top: 10px;
-  padding-right: 15px;
-}
-
-.footer-inf {
-  background-color: #109c62;
-  height: 100%;
-  padding: 50px 100px 100px 100px;
-  display: flex;
-  font-size: 20px;
-  justify-content: space-around;
-}
-.footer-inf h3 {
-  color: #f1f1f1;
-  font-size: 30px;
-  margin-bottom: 20px;
-}
-
-.footer-inf p {
-  margin-top: 10px;
-  color: #f1f1f1;
-  background-color: #109c62;
-}
-.footer-inf a {
-  text-decoration: none;
+	margin-top: 40px;
+	padding: 10px 0;
 }
 
 .container-form {
-  display: flex;
+	display: flex;
 }

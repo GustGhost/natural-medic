@@ -51,6 +51,7 @@ header .linksHeader {
 
 header .linksHeader a {
 	color: #008037;
+	transition: 0.3s all linear;
 }
 
 header .linksHeader a:hover {

@@ -1,142 +1,166 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="../style/style.css">
     <link
       rel="stylesheet"
       href="../style/mobile.css"
       media="max-width: 425px"
-    />
+    /> -->
+		<link rel="stylesheet" href="../assets/css/global.css" />
+		<link rel="stylesheet" href="./css/style.css" />
+		<title>Sobre</title>
+	</head>
+	<body>
+		<script
+			type="module"
+			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+		></script>
+		<script
+			nomodule
+			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+		></script>
 
-    <title>Sobre</title>
-  </head>
-  <body>
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
+		<header>
+			<a href="./index.html">
+				<img src="../img/icon.png" alt="icone" />
+			</a>
 
-    <header>
-      <a href="./index.html">
-        <img src="../img/icon.png" alt="icone" />
-      </a>
+			<div class="linksHeader">
+				<a href="../index.html">Página Inicial</a>
+				<a href="./index.html">Sobre</a>
+				<a href="../contato/index.html">Contato</a>
+				<a href="../consultar-cep/index.html"
+					>Descubra uma clínica perto de você</a
+				>
+			</div>
 
-      <div class="linksHeader">
-        <a href="../index.html">Página Inicial</a>
-        <a href="./index.html">Sobre</a>
-        <a href="../contato/index.html">Contato</a>
-        <a href="../consultar-cep/index.html"
-          >Descubra uma clínica perto de você</a
-        >
-      </div>
+			<div id="login"></div>
+		</header>
 
-      <div id="login"></div>
-    </header>
+		<main>
+			<section class="first-section">
+				<div class="container">
+					<div class="title">
+						<h1>O maior sistema corporativo</h1>
+						<h2>de médicos do mundo está aqui</h2>
+					</div>
+					<div class="cards">
+						<div class="card">
+							<div class="image">
+								<img src="../img/tag2.png" alt="tag2" class="card-img" />
+							</div>
+							<div class="content">
+								<h3 class="card-title">Para toda sua empresa</h3>
+								<p>Encontre o plano ideal para sua empresa aqui</p>
+								<button class="card-btn">
+									<a href="../producao/index.html">Saiba mais</a>
+								</button>
+							</div>
+						</div>
+						<div class="card">
+							<div class="image">
+								<img src="../img/tag1.png" alt="tag1" class="card-img" />
+							</div>
+							<div class="content">
+								<h3 class="card-title">Para toda família</h3>
+								<p>Encontre o plano ideal para sua família aqui</p>
+								<button class="card-btn">
+									<a href="../producao/index.html">Saiba mais</a>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="second-section">
+				<p>
+					A Natural Medic é a maior experiência cooperativista na área da saúde
+					em todo o mundo e também a maior rede de assistência médica do Brasil,
+					presente em 74,9% do território nacional. Hoje é composta por 377
+					cooperativas médicas, que prestam assistência para mais de 15 milhões
+					de associados e 73 mil empresas em todo País. Clientes Natural contam
+					com mais de 106 mil médicos, 3.244 hospitais credenciados, além de
+					pronto-atendimentos, laboratórios, ambulâncias e hospitais próprios e
+					credenciados para garantir qualidade na assistência médica, hospitalar
+					e de diagnóstico complementar. De acordo com pesquisa nacional do
+					Instituto Datafolha, a Natural Medic é pelo 15º ano consecutivo a
+					marca Top of Mind quando o assunto é plano de saúde, outro destaque é
+					o prêmio plano de saúde em que os brasileiros mais confiam, recebido
+					pela sétima vez consecutiva, na pesquisa Marcas de Confiança.
+				</p>
+			</div>
+		</main>
 
-    <section class="about">
-      <img src="../img/sobre.png" alt="banner" />
-      <div class="bannertransp"></div>
-      <h1>O maior sistema corporativo</h1>
-      <h2>de médicos do mundo está aqui</h2>
-      <div class="tag1">
-        <img src="../img/tag1.png" alt="tag1" />
-        <p>Para toda família</p>
-        <p>Encontre o plano ideal para sua família aqui</p>
-        <a href="../producao/index.html"><button>Saiba mais</button></a>
-      </div>
-      <div class="tag2">
-        <img src="../img/tag2.png" alt="tag2" />
-        <p>Para toda sua empresa</p>
-        <p>Encontre o plano ideal para sua empresa aqui</p>
-        <a href="../producao/index.html"><button>Saiba mais</button></a>
-      </div>
-      <div class="container">
-        <div class="banner2"></div>
-        <p>
-          A Natural Medic é a maior experiência cooperativista na área da saúde
-          em todo o mundo e também a maior rede de assistência médica do Brasil,
-          presente em 74,9% do território nacional. Hoje é composta por 377
-          cooperativas médicas, que prestam assistência para mais de 15 milhões
-          de associados e 73 mil empresas em todo País. Clientes Natural contam
-          com mais de 106 mil médicos, 3.244 hospitais credenciados, além de
-          pronto-atendimentos, laboratórios, ambulâncias e hospitais próprios e
-          credenciados para garantir qualidade na assistência médica, hospitalar
-          e de diagnóstico complementar. De acordo com pesquisa nacional do
-          Instituto Datafolha, a Natural Medic é pelo 15º ano consecutivo a
-          marca Top of Mind quando o assunto é plano de saúde, outro destaque é
-          o prêmio plano de saúde em que os brasileiros mais confiam, recebido
-          pela sétima vez consecutiva, na pesquisa Marcas de Confiança.
-        </p>
-      </div>
-    </section>
-
-    <div class="footer-sup">
-      <img src="../img/icon.png" alt="icon-footer" />
-      <div>
-        <h3>Contato Clínica</h3>
-        <p>
-          Avenida José Pereira, 234, Centro, São Paulo - SPAvenida José Pereira,
-          234, Centro, São Paulo - SP
-        </p>
-        <p>(11) 1234-0000</p>
-      </div>
-      <div>
-        <h3>Centra de atendimento Plano de Saúde</h3>
-        <p>
-          Avenida José Pereira, 234, Centro, São Paulo - SPAvenida José Pereira,
-          234, Centro, São Paulo - SP
-        </p>
-        <p>(11) 1234-2222</p>
-      </div>
-      <div>
-        <h3>Ouvidoria</h3>
-        <p>ouvidoria@naturalmedic.com</p>
-        <p>ouvidoriahsp@naturalmedic.com</p>
-        <p>(11) 1234-3330</p>
-      </div>
-    </div>
-    <div class="footer-inf">
-      <div>
-        <h3>Natural Medic</h3>
-        <p>Sobre</p>
-        <p>Serviços Online</p>
-        <p>A estrutura</p>
-      </div>
-      <div>
-        <h3>Hospital</h3>
-        <a href="../producao/index.html">
-          <p>Centro Cirúrgico e Sala de Recuperação Pós-anestésica</p>
-          <p>Consultas</p>
-          <p>Diagnóstico por imagem</p>
-          <p>Maternidade</p>
-          <p>Oncologia</p>
-          <p>Pronto Atendimento</p>
-        </a>
-      </div>
-      <div>
-        <h3>Planos de Saúde</h3>
-        <a href="../producao/index.html">
-          <p>Sou Beneficiário</p>
-          <p>Sou Prestador</p></a
-        >
-      </div>
-      <div>
-        <h3>Contato</h3>
-        <a href="../producao/index.html">
-          <p>Telefones Úteis</p>
-          <p>Enviar Mensagem</p>
-          <p>Trabalhe Conosco</p></a
-        >
-      </div>
-    </div>
-    <script src="../js/script.js"></script>
-  </body>
+		<footer>
+			<div class="footer-sup">
+				<img src="../img/icon.png" alt="icon-footer" />
+				<div class="footer-divs">
+					<h3>Contato Clínica</h3>
+					<p>
+						Avenida José Pereira, 234, Centro, São Paulo - SPAvenida José
+						Pereira, 234, Centro, São Paulo - SP
+					</p>
+					<p>(11) 1234-0000</p>
+				</div>
+				<div class="footer-divs">
+					<h3>Centra de atendimento Plano de Saúde</h3>
+					<p>
+						Avenida José Pereira, 234, Centro, São Paulo - SPAvenida José
+						Pereira, 234, Centro, São Paulo - SP
+					</p>
+					<p>(11) 1234-2222</p>
+				</div>
+				<div class="footer-divs">
+					<h3>Ouvidoria</h3>
+					<p>ouvidoria@naturalmedic.com</p>
+					<p>ouvidoriahsp@naturalmedic.com</p>
+					<p>(11) 1234-3330</p>
+				</div>
+			</div>
+			<div class="footer-inf">
+				<div class="footer-info-ptrn">
+					<h3>Natural Medic</h3>
+					<a
+						href="../sobre/index.html
+         "
+						><p>Sobre</p></a
+					>
+					<p>Serviços Online</p>
+					<p>A estrutura</p>
+				</div>
+				<div class="footer-info-ptrn">
+					<h3>Hospital</h3>
+					<a href="../producao/index.html"
+						><p>Centro Cirúrgico e Sala de Recuperação Pós-anestésica</p></a
+					>
+					<a href="../producao/index.html"> <p>Consultas</p></a>
+					<a href="../producao/index.html"><p>Diagnóstico por imagem</p></a>
+					<a href="../producao/index.html"> <p>Maternidade</p></a>
+					<a href="../producao/index.html"><p>Oncologia</p></a>
+					<a href="../producao/index.html"> <p>Pronto Atendimento</p></a>
+				</div>
+				<div class="footer-info-ptrn">
+					<h3>Planos de Saúde</h3>
+					<a href="../producao/index.html">
+						<p>Sou Beneficiário</p>
+						<p>Sou Prestador</p></a
+					>
+				</div>
+				<div class="footer-info-ptrn">
+					<h3>Contato</h3>
+					<a href="../producao/index.html">
+						<p>Telefones Úteis</p>
+						<p>Enviar Mensagem</p>
+						<p>Trabalhe Conosco</p></a
+					>
+				</div>
+			</div>
+		</footer>
+		<script src="../js/script.js"></script>
+	</body>
 </html>
