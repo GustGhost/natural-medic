@@ -1,80 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;800&display=swap');
 
-* {
-  padding: 0;
-  margin: 0;
-}
 
-button {
-  all: unset;
-  background-color: #008037;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-header {
-  display: flex;
-  background-color: #f1f1f1a1;
-  height: 100px;
-  font-family: 'Poppins', sans-seri;
-  width: 100%;
-  position: absolute;
-}
 
 header button {
   color: #ffffff;
   padding: 0.5rem 1rem;
   border-radius: 1rem;
-}
-
-header img {
-  width: 150px;
-  position: absolute;
-  top: 5px;
-  left: 10px;
-}
-
-.linksHeader {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
-  font-family: 'Poppins', sans-seri;
-  font-weight: 500;
-}
-
-.linksHeader a {
-  margin: 0px 20px;
-  color: #008037;
-  text-decoration: none;
-}
-
-.linksHeader a:hover {
-  color: #000;
-  transform: scale(1.1);
-}
-
-.loginBtn {
-  color: #f1f1f1;
-  background-color: #008037;
-  width: 120px;
-  height: 50px;
-  font-size: large;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  border-radius: 15px;
-  margin: 0px 40px;
-}
-
-.loginBtn:hover {
-  background-color: #000000;
-  transition: 0.5s;
-  color: #ffffff;
 }
 
 .about {
@@ -257,4 +188,18 @@ header img {
 .footer-inf a,
 .tags a {
   text-decoration: none;
+}
+
+button {
+  all: unset;
+  background-color: #008037;
+}
+
+.linksHeader div button a {
+  color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }

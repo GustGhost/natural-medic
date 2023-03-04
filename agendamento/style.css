@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;800&display=swap');
 
-* {
-	padding: 0;
-	margin: 0;
-}
+
 header {
 	display: flex;
 	background-color: #f1f1f1a1;
@@ -40,24 +37,6 @@ header a:hover {
 	transform: scale(1.1);
 }
 
-.loginBtn {
-	color: #f1f1f1;
-	background-color: #008037;
-	width: 120px;
-	height: 50px;
-	font-size: large;
-	align-items: center;
-	justify-content: center;
-	display: flex;
-	border-radius: 15px;
-	margin: 0px 40px;
-}
-
-.loginBtn:hover {
-	background-color: #000000;
-	transition: 0.5s;
-	color: #ffffff;
-}
 .footer-sup {
 	display: flex;
 	font-size: 20px;

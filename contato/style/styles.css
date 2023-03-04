@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;800&display=swap');
 
-* {
-  padding: 0;
-  margin: 0;
-}
 header {
   display: flex;
   background-color: #f1f1f1a1;
@@ -12,52 +8,7 @@ header {
   width: 100%;
   position: absolute;
 }
-header img {
-  width: 150px;
-  position: absolute;
-  top: 5px;
-  left: 10px;
-}
 
-.linksHeader {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
-  font-family: 'Poppins', sans-seri;
-  font-weight: 500;
-}
-
-header a {
-  margin: 0px 20px;
-  color: #008037;
-  text-decoration: none;
-}
-
-header a:hover {
-  color: #000;
-  transform: scale(1.1);
-}
-
-.loginBtn {
-  color: #f1f1f1;
-  background-color: #008037;
-  width: 120px;
-  height: 50px;
-  font-size: large;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  border-radius: 15px;
-  margin: 0px 40px;
-}
-
-.loginBtn:hover {
-  background-color: #000000;
-  transition: 0.5s;
-  color: #ffffff;
-}
 .contato {
   font-family: 'Poppins', sans-seri;
   height: 800px;
@@ -71,9 +22,11 @@ header a:hover {
 
 .contato h2 {
   margin-bottom: 10px;
+  color: #008037;
 }
 .contato .plano {
   margin-top: 50px;
+  width: 406px;
 }
 .contato p {
   margin: 10px;
@@ -96,7 +49,8 @@ header a:hover {
 }
 
 .contato .clinica {
-  margin-top: 100px;
+  margin-top: 48px;
+  margin-left: 30px;
 }
 
 .contato .clinica span:nth-child(6) {
@@ -154,4 +108,8 @@ header a:hover {
 }
 .footer-inf a {
   text-decoration: none;
+}
+
+.container-form {
+  display: flex;
 }
