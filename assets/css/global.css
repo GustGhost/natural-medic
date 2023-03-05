@@ -6,6 +6,7 @@
 	box-sizing: border-box;
 	font-family: 'Poppins', sans-serif;
 	list-style: none;
+		scroll-behavior: smooth;
 }
 
 body {
@@ -30,11 +31,13 @@ header {
 	justify-content: space-between;
 	align-items: center;
 	background-color: #f1f1f1a1;
-	padding: 0.5rem;
+	padding: 0.5rem 1.875rem;
+	height: 5rem;
 }
 
 header > a img {
 	width: 100%;
+	vertical-align: middle;
 }
 
 header > a {

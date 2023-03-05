@@ -97,7 +97,6 @@ btnListPeople.addEventListener('click', () => {
         });
       });
       pessoas.forEach((pessoa) => {
-        console.log(pessoa);
         listaDeUsuario.innerHTML += `<li class ='liStyle'>
         <p>  Nome: ${pessoa.nome.first} ${pessoa.nome.last} Idade: ${pessoa.idade} </p>
         <img src = '${pessoa.image}'} alt ='foto'/>
@@ -140,7 +139,6 @@ submit.addEventListener('click', (e) => {
       nameMedic: nameMedic,
       comment: comment,
     });
-    console.log(dados);
     chamarComentarios();
     document.getElementById('nome').value = '';
     document.getElementById('idade').value = '';
