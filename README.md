@@ -17,6 +17,10 @@ Esse projeto foi desenvolvido com as seguintes tecnologias
 - CSS
 - GIT e Github
 
+## :star:APIs utilizadas
+- <a href = "https://randomuser.me/"> Random User </a>
+-  <a href = "https://dummyjson.com/"> Dummy JSON </a>
+
 ## :computer:Estrutura do projeto
 
 A Natural Medic atualmente possui ao todo 7 páginas funcionais.
