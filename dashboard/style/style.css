@@ -27,7 +27,10 @@
 	background-color: #109c62;
 	border-radius: 14px;
 	color: white;
+	font-weight: bold;
+	font-size: 1.1rem;
 	padding: 0.7rem;
+	cursor: pointer;
 }
 .dash-content {
 	width: 100%;
@@ -67,8 +70,7 @@
 	font-weight: bold;
 	border-radius: 14px;
 	display: flex;
-	gap: 15px;
-	justify-content: center;
+	justify-content: space-around;
 }
 .img-card-container {
 	height: 100%;
@@ -77,4 +79,10 @@
 .img-card-container > img {
 	width: 100%;
 	height: 100%;
+}
+.results {
+	transition: all linear 0.3s;
+}
+.results:hover {
+	color: #032e1c;
 }
