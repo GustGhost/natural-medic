@@ -23,7 +23,7 @@ function validateEmail(value) {
 		/^([\w-]+(?:.[\w-]+))@((?:[\w-]+.)\w[\w-]{0,66}).([a-z]{2,6}(?:.[a-z]{2})?)$/i;
 	return re.test(value);
 }
-
+console.log(userList);
 const loginButton = document.querySelector('.login-btn');
 
 loginButton.addEventListener('click', el => {
@@ -66,7 +66,7 @@ function store() {
 				localStorage.setItem('email', email.value);
 				localStorage.setItem('password', password.value);
 				alert('Logado!');
-				window.location.replace('../../index.html');
+				window.location.replace('../../dashboard/index.html');
 			} else {
 				errors.push('Error');
 			}

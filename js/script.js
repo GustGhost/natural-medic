@@ -9,7 +9,7 @@ function check() {
 	} else {
 		document.getElementById(
 			'login'
-		).innerHTML = `<button class ='login-btn-green'><a href="../login/index.html">Entrar</a></button>`;
+		).innerHTML = `<button class ='login-btn-green'><a href="../../login/index.html">Entrar</a></button>`;
 	}
 }
 
