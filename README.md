@@ -14,8 +14,10 @@
 Esse projeto foi desenvolvido com as seguintes tecnologias
 - Javascript
 - HTML
-- CSS
+- CSS 
+- Bootstrap
 - GIT e Github
+
 
 ## :star:APIs utilizadas
 - <a href = "https://randomuser.me/"> Random User </a>
