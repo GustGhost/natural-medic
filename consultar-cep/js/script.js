@@ -1,5 +1,4 @@
 const pesquisarCep = async () => {
-<<<<<<< HEAD
 	const cep = document.getElementById('cep').value.trim();
 	const resultContainer = document.getElementById('result');
 
@@ -33,32 +32,32 @@ const pesquisarCep = async () => {
 		alert(`Um erro foi encontrado, tente novamente\n${error.message}`);
 	}
 };
-=======
-	let cep = document.getElementById('cep').value;
-	// const resultContainer = document.getElementById('result');
 
-	if (cep.trim() === '') {
-		document.getElementById(
-		  'result'
-		).innerHTML = `<h5 class='warning'>O campo Buscar CEP deve ser preenchido!</h5>`;
-	  } else {
-		await fetch(`https://viacep.com.br/ws/${cep}/json/`, {
-		  method: 'GET',
-		  headers: {
+let cep = document.getElementById('cep').value;
+// const resultContainer = document.getElementById('result');
+
+if (cep.trim() === '') {
+	document.getElementById(
+		'result'
+	).innerHTML = `<h5 class='warning'>O campo Buscar CEP deve ser preenchido!</h5>`;
+} else {
+	await fetch(`https://viacep.com.br/ws/${cep}/json/`, {
+		method: 'GET',
+		headers: {
 			'Content-Type': 'application/json',
-		  },
-		})
-		  .then((response) => {
+		},
+	})
+		.then(response => {
 			if (!response.ok) {
-			  throw new Error(`CPF Inválido!`);
+				throw new Error(`CPF Inválido!`);
 			}
 			return response.json();
-		  })
-		  .then((address) => {
+		})
+		.then(address => {
 			if (!address.erro) {
-			  document.getElementById(
-				'result'
-			  ).innerHTML = `<div class="card" style="width: 18rem;">
+				document.getElementById(
+					'result'
+				).innerHTML = `<div class="card" style="width: 18rem;">
 					<div class="card-body">
 					<h5 class="card-title">Endereço da Clínica</h5>
 					</div>
@@ -81,19 +80,18 @@ const pesquisarCep = async () => {
                  <li class="list-group-item"><b>UF:</b> ${address.uf}</li>
               </ul>
             </div>`;
-		} else {
-			document.getElementById(
-			  'result'
-			).innerHTML = `<h5>Erro! CEP não encontrado</h5>`;
-		  }
+			} else {
+				document.getElementById(
+					'result'
+				).innerHTML = `<h5>Erro! CEP não encontrado</h5>`;
+			}
 		})
-		.catch((error) => {
-		  alert(`
+		.catch(error => {
+			alert(`
 		  Erro! Tente novamente!
 		  `);
 		});
-	}}
->>>>>>> 9814225404e97c620e009c14d8b4ba92e1ba79b0
+}
 
 const showWarning = (container, message) => {
 	const warning = document.createElement('h5');
