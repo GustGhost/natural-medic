@@ -1,40 +1,29 @@
 const pesquisarCep = async () => {
 	let cep = document.getElementById('cep').value;
-	const resultContainer = document.getElementById('result');
+	// const resultContainer = document.getElementById('result');
 
 	if (cep.trim() === '') {
-		// document.getElementById(
-		//   'result'
-		// ).innerHTML = `<h5 class='warning'>O campo Buscar CEP deve ser preenchido!</h5>`;
-		if (!cep) {
-			const warning = document.createElement('h5');
-			warning.textContent = 'O campo Buscar CEP deve ser preenchido!';
-			warning.classList.add('warning');
-			resultContainer.textContent = '';
-			resultContainer.appendChild(warning);
-			return;
-		}
-	}
-	try {
+		document.getElementById(
+		  'result'
+		).innerHTML = `<h5 class='warning'>O campo Buscar CEP deve ser preenchido!</h5>`;
+	  } else {
 		await fetch(`https://viacep.com.br/ws/${cep}/json/`, {
-			method: 'GET',
-			headers: {
-				'Content-Type': 'application/json',
-			},
+		  method: 'GET',
+		  headers: {
+			'Content-Type': 'application/json',
+		  },
 		})
-			.then(response => {
-				if (!response.ok) {
-					throw new Error(`HTTP error: ${response.status}`);
-				}
-				return response.json();
-			})
-			.then(address => {
-				if (!address.erro) {
-					throw new Error('O CEP inserido não foi encontrado');
-				}
-				document.getElementById(
-					'result'
-				).innerHTML = `<div class="card" style="width: 18rem;">
+		  .then((response) => {
+			if (!response.ok) {
+			  throw new Error(`CPF Inválido!`);
+			}
+			return response.json();
+		  })
+		  .then((address) => {
+			if (!address.erro) {
+			  document.getElementById(
+				'result'
+			  ).innerHTML = `<div class="card" style="width: 18rem;">
 					<div class="card-body">
 					<h5 class="card-title">Endereço da Clínica</h5>
 					</div>
@@ -57,11 +46,18 @@ const pesquisarCep = async () => {
                  <li class="list-group-item"><b>UF:</b> ${address.uf}</li>
               </ul>
             </div>`;
-			});
-	} catch (error) {
-		alert(`Um erro foi encontrado, tente novamente\n${error.message}`);
-	}
-};
+		} else {
+			document.getElementById(
+			  'result'
+			).innerHTML = `<h5>Erro! CEP não encontrado</h5>`;
+		  }
+		})
+		.catch((error) => {
+		  alert(`
+		  Erro! Tente novamente!
+		  `);
+		});
+	}}
 
 const clearInput = () => {
 	document.getElementById('cep').value = '';
