@@ -29,6 +29,17 @@ Esse projeto foi desenvolvido com as seguintes tecnologias
 - Nome: Ewell | Email: ggude7@chron.com | Senha: MWwlaeWcOoF6
 - Nome: Marcel | Email: acharlota@liveinternet.ru | Senha: M9lbMdydMN
 
+## :blue_book:Como utilizar o projeto
+
+- Deve-se acessar o projeto pelo link https://natural-medic-gustghost.vercel.app/;
+- Deve-se fazer o login utilizando os dados apresentados no exemplo acima;
+- Ao conseguir fazer o login, é possível acessar todas as páginas que já estão concluídas no projeto;
+- Ao concluir o login será redirecionado para a página de informações onde é possível ver o histórico de consultas e o histórico de exames; 
+- Na página **Descubra uma clínica perto de você** para descobrir o endereço de uma clínica por meio do CEP basta preencher o CEP corretamente e clicar em pesquisar, para conhecer nossos médicos basta clicar em ver e será mostrado uma lista de médicos, e para adicionar um comentário basta preencher todos os campos corretamente e clicar em enviar e o comentário aparecerá logo abaixo;
+- Na página **Contato** é possível acessar formulários para entrar em contato com a clínica ou com o plano de saúde, para utilizá-los basta preencher os dados corretamente e clicar em enviar;
+- Na página **Sobre** é possível acessar informações da _Natural Medic_ para conhecer mais sobre nós;
+- Na **Página Inicial** é possível acessar a página de **Agendamentos** onde para usar é necessário apenas preencher todos os dados corretamente e clicar no botão enviar.
+
 ## :computer:Estrutura do projeto
 
 A Natural Medic atualmente possui ao todo 7 páginas funcionais.
