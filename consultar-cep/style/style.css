@@ -68,6 +68,7 @@ input[type='number'] {
 	background: #198754;
 	color: #ffffff;
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 	border-top-right-radius: 10px;
 	border-top-left-radius: 10px;

@@ -1,71 +1,72 @@
 const pesquisarCep = async () => {
-	let cep = document.getElementById('cep').value;
+	const cep = document.getElementById('cep').value.trim();
 	const resultContainer = document.getElementById('result');
 
-	if (cep.trim() === '') {
-		// document.getElementById(
-		//   'result'
-		// ).innerHTML = `<h5 class='warning'>O campo Buscar CEP deve ser preenchido!</h5>`;
-		if (!cep) {
-			const warning = document.createElement('h5');
-			warning.textContent = 'O campo Buscar CEP deve ser preenchido!';
-			warning.classList.add('warning');
-			resultContainer.textContent = '';
-			resultContainer.appendChild(warning);
-			return;
-		}
+	if (!cep) {
+		showWarning(resultContainer, 'O campo Buscar CEP deve ser preenchido!');
+		return;
 	}
+
 	try {
-		await fetch(`https://viacep.com.br/ws/${cep}/json/`, {
+		const response = await fetch(`https://viacep.com.br/ws/${cep}/json/`, {
 			method: 'GET',
 			headers: {
 				'Content-Type': 'application/json',
 			},
-		})
-			.then(response => {
-				if (!response.ok) {
-					throw new Error(`HTTP error: ${response.status}`);
-				}
-				return response.json();
-			})
-			.then(address => {
-				if (!address.erro) {
-					throw new Error('O CEP inserido não foi encontrado');
-				}
-				document.getElementById(
-					'result'
-				).innerHTML = `<div class="card" style="width: 18rem;">
-					<div class="card-body">
-					<h5 class="card-title">Endereço da Clínica</h5>
-					</div>
-					<ul class="list-group list-group-flush">
-					<li class="list-group-item"><b>Bairro:</b> ${address.bairro}</li>
-              		<li class="list-group-item"><b>Logradouro:</b> ${
-										address.logradouro
-									}</li>
-               <li class="list-group-item"><b>Bairro:</b> ${address.bairro}</li>
-           ${
-							address.complemento
-								? `<li class='list-group-item'>
-                 <b>Complemento:</b> ${address.complemento}
-                      </li>`
-								: ''
-						}
-            <li class="list-group-item"><b>Localidade:</b> ${
-							address.localidade
-						}</li>
-                 <li class="list-group-item"><b>UF:</b> ${address.uf}</li>
-              </ul>
-            </div>`;
-			});
+		});
+
+		if (!response.ok) {
+			throw new Error(`HTTP error: ${response.status}`);
+		}
+
+		const address = await response.json();
+
+		if (address.erro) {
+			throw new Error('O CEP inserido não foi encontrado');
+		}
+
+		const addressElement = createAddressElement(address);
+		resultContainer.textContent = '';
+		resultContainer.appendChild(addressElement);
 	} catch (error) {
 		alert(`Um erro foi encontrado, tente novamente\n${error.message}`);
 	}
 };
 
+const showWarning = (container, message) => {
+	const warning = document.createElement('h5');
+	warning.textContent = message;
+	warning.classList.add('warning');
+	container.textContent = '';
+	container.appendChild(warning);
+};
+
+const createAddressElement = address => {
+	const element = document.createElement('div');
+	element.classList.add('card');
+	element.style.width = '18rem';
+
+	element.innerHTML = `<div class="card-body">
+	  <h5 class="card-title">Endereço da Clínica</h5>
+	  <ul class="list-group list-group-flush">
+		<li class="list-group-item"><b>Bairro:</b> ${address.bairro}</li>
+		<li class="list-group-item"><b>Logradouro:</b> ${address.logradouro}</li>
+		${
+			address.complemento
+				? `<li class='list-group-item'><b>Complemento:</b> ${address.complemento}</li>`
+				: ''
+		}
+		<li class="list-group-item"><b>Localidade:</b> ${address.localidade}</li>
+		<li class="list-group-item"><b>UF:</b> ${address.uf}</li>
+	  </ul>
+	</div>`;
+
+	return element;
+};
+
 const clearInput = () => {
 	document.getElementById('cep').value = '';
-	document.getElementById('result').innerHTML = '';
+	document.getElementById('result').textContent = '';
 };
 
 // ----------------------- Usuários -----------------------
