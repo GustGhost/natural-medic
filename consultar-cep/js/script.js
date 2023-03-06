@@ -59,6 +59,10 @@ const pesquisarCep = async () => {
 			});
 	}
 };
+const clearInput = () => {
+	document.getElementById('cep').value = '';
+	document.getElementById('result').innerHTML = '';
+};
 // ----------------------- Usuários -----------------------
 let userDiv = document.querySelector('#usuariosList');
 const btnListPeople = document.querySelector('.listPeople');
