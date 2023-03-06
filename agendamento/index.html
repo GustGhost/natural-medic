@@ -1,158 +1,181 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="../img/icon.png" type="image/png" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-    />
-    <link rel="shortcut icon" href="favicon.ico" type="image/png" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Agendamento</title>
-  </head>
-  <body>
-    <header>
-      <div>
-        <a href="../index.html">
-          <img src="../img/icon.png" alt="icone" />
-        </a>
-      </div>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" href="../img/icon.png" type="image/png" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+		/>
+		<link rel="shortcut icon" href="favicon.ico" type="image/png" />
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="../assets/css/global.css" />
+		<title>Agendamento</title>
+	</head>
+	<body>
+		<header>
+			<a href="../index.html">
+				<img src="../img/icon.png" alt="icone" />
+			</a>
 
-      <div class="linksHeader">
-        <a href="../index.html">Página Inicial</a>
-        <a href="../sobre/index.html">Sobre</a>
-        <a href="../contato/index.html">Contato</a>
-        <a href="../consultar-cep/index.html"
-          >Descubra uma clínica perto de você</a
-        >
+			<div class="linksHeader">
+				<a href="../index.html">Página Inicial</a>
+				<a href="../sobre/index.html">Sobre</a>
+				<a href="../contato/index.html">Contato</a>
+				<a href="./index.html">Descubra uma clínica perto de você</a>
+			</div>
 
-        <div id="login"></div>
-      </div>
-    </header>
+			<div id="login"></div>
+		</header>
 
-    <form>
-      <h1>Agendamento</h1>
-      <div class="formulario">
-        <div>
-          <h3 class="tituloInput">Nome</h3>
-          <input
-            class="input"
-            type="text"
-            name="nome"
-            id="nome"
-            placeholder="Digite seu nome"
-          />
-        </div>
-        <div>
-          <h3 class="tituloInput">Telefone:</h3>
-          <input
-            class="input"
-            type="number"
-            name="telefons"
-            id="telefone"
-            placeholder="(xx) xxxxx-xxxx"
-          />
-        </div>
+		<main>
+			<section class="form">
+				<div class="title"><h1>Agendamento</h1></div>
+				<div class="container">
+					<div class="top-content">
+						<div class="input-form">
+							<label for="name">Nome</label>
+							<input
+								type="text"
+								name="name"
+								id=""
+								placeholder="Digite seu nome"
+								class="input-ptrn"
+							/>
+						</div>
+						<div class="input-form">
+							<label for="data">Data</label>
+							<input
+								type="datetime-local"
+								name="data"
+								id=""
+								class="input-ptrn"
+							/>
+						</div>
+					</div>
+					<div class="mid-content">
+						<div class="left-content">
+							<div class="input-form left-form">
+								<label for="numero">Telefone</label>
+								<input
+									type="number"
+									name="numero"
+									id=""
+									placeholder="(xx) xxxxx-xxxx"
+									class="input-ptrn"
+								/>
+							</div>
+							<div class="input-form left-form">
+								<label for="name">Unidade</label>
+								<select class="input-ptrn" name="unidade" id="unidade">
+									<option value="default">Escolha a unidade</option>
+									<option value="poa">Porto Alegre</option>
+									<option value="gravatai">Gravatai</option>
+									<option value="joaoPessoa">João Pessoa</option>
+									<option value="campinaGrande">Campina Grande</option>
+								</select>
+							</div>
+							<div class="input-form left-form">
+								<label for="name">Procedimento</label>
+								<select
+									class="input-ptrn"
+									name="especialista"
+									id="especialista"
+								>
+									<option value="default">Escolha um procedimento</option>
+									<option value="consulta">Consulta</option>
+									<option value="Exame">Exame</option>
+								</select>
+							</div>
+						</div>
+						<div class="right-content">
+							<div class="input-form right-form">
+								<label for="data">Observações</label>
+								<textarea
+									rows="8"
+									name="observacoes"
+									id="observacoes"
+									class="obs"
+								>
+								</textarea>
+							</div>
+						</div>
+					</div>
+					<div class="bottom-content">
+						<button class="submit-btn">Enviar</button>
+					</div>
+				</div>
+			</section>
+		</main>
 
-        <div>
-          <h3 class="tituloInput">Unidade</h3>
-          <select class="input" name="unidade" id="unidade">
-            <option value="default">Escolha a unidade</option>
-            <option value="poa">Porto Alegre</option>
-            <option value="gravatai">Gravatai</option>
-            <option value="joaoPessoa">João Pessoa</option>
-            <option value="campinaGrande">Campina Grande</option>
-          </select>
-        </div>
+		<footer>
+			<div class="footer-sup">
+				<img src="../img/icon.png" alt="icon-footer" />
+				<div class="footer-divs">
+					<h3>Contato Clínica</h3>
+					<p>
+						Avenida José Pereira, 234, Centro, São Paulo - SPAvenida José
+						Pereira, 234, Centro, São Paulo - SP
+					</p>
+					<p>(11) 1234-0000</p>
+				</div>
+				<div class="footer-divs">
+					<h3>Centra de atendimento Plano de Saúde</h3>
+					<p>
+						Avenida José Pereira, 234, Centro, São Paulo - SPAvenida José
+						Pereira, 234, Centro, São Paulo - SP
+					</p>
+					<p>(11) 1234-2222</p>
+				</div>
+				<div class="footer-divs">
+					<h3>Ouvidoria</h3>
+					<p>ouvidoria@naturalmedic.com</p>
+					<p>ouvidoriahsp@naturalmedic.com</p>
+					<p>(11) 1234-3330</p>
+				</div>
+			</div>
+			<div class="footer-inf">
+				<div class="footer-info-ptrn">
+					<h3>Natural Medic</h3>
+					<a
+						href="../sobre/index.html
+         "
+						><p>Sobre</p></a
+					>
+					<p>Serviços Online</p>
+					<p>A estrutura</p>
+				</div>
+				<div class="footer-info-ptrn">
+					<h3>Hospital</h3>
+					<a href="../producao/index.html"
+						><p>Centro Cirúrgico e Sala de Recuperação Pós-anestésica</p></a
+					>
+					<a href="../producao/index.html"> <p>Consultas</p></a>
+					<a href="../producao/index.html"><p>Diagnóstico por imagem</p></a>
+					<a href="../producao/index.html"> <p>Maternidade</p></a>
+					<a href="../producao/index.html"><p>Oncologia</p></a>
+					<a href="../producao/index.html"> <p>Pronto Atendimento</p></a>
+				</div>
+				<div class="footer-info-ptrn">
+					<h3>Planos de Saúde</h3>
+					<a href="../producao/index.html">
+						<p>Sou Beneficiário</p>
+						<p>Sou Prestador</p></a
+					>
+				</div>
+				<div class="footer-info-ptrn">
+					<h3>Contato</h3>
+					<a href="../producao/index.html">
+						<p>Telefones Úteis</p>
+						<p>Enviar Mensagem</p>
+						<p>Trabalhe Conosco</p></a
+					>
+				</div>
+			</div>
+		</footer>
 
-        <div>
-          <h3 class="tituloInput">Procedimento</h3>
-          <select class="input" name="especialista" id="especialista">
-            <option value="default">Escolha um procedimento</option>
-            <option value="consulta">Consulta</option>
-            <option value="Exame">Exame</option>
-          </select>
-        </div>
-
-        <div>
-          <h3 class="tituloInput">Data/Hora</h3>
-          <input class="input" type="datetime-local" name="data" id="data" />
-        </div>
-
-        <div>
-          <h3 class="tituloInput">Observações</h3>
-          <textarea rows="8" name="observacoes" id="observacoes"> </textarea>
-        </div>
-
-        <input class="enviar" type="submit" value="Enviar" />
-      </div>
-    </form>
-    <div class="footer-sup">
-      <img src="../img/icon.png" alt="icon-footer" />
-      <div>
-        <h3>Contato Clínica</h3>
-        <p>
-          Avenida José Pereira, 234, Centro, São Paulo - SPAvenida José Pereira,
-          234, Centro, São Paulo - SP
-        </p>
-        <p>(11) 1234-0000</p>
-      </div>
-      <div>
-        <h3>Centra de atendimento Plano de Saúde</h3>
-        <p>
-          Avenida José Pereira, 234, Centro, São Paulo - SPAvenida José Pereira,
-          234, Centro, São Paulo - SP
-        </p>
-        <p>(11) 1234-2222</p>
-      </div>
-      <div>
-        <h3>Ouvidoria</h3>
-        <p>ouvidoria@naturalmedic.com</p>
-        <p>ouvidoriahsp@naturalmedic.com</p>
-        <p>(11) 1234-3330</p>
-      </div>
-    </div>
-    <div class="footer-inf">
-      <div>
-        <h3>Natural Medic</h3>
-        <a
-          href="../sobre/index.html
-       "
-          ><p>Sobre</p></a
-        >
-        <p>Serviços Online</p>
-        <p>A estrutura</p>
-      </div>
-      <div>
-        <h3>Hospital</h3>
-        <a href="../producao/index.html">
-          <p>Centro Cirúrgico e Sala de Recuperação Pós-anestésica</p>
-          <p>Consultas</p>
-          <p>Diagnóstico por imagem</p>
-          <p>Maternidade</p>
-          <p>Oncologia</p>
-          <p>Pronto Atendimento</p>
-        </a>
-      </div>
-      <div>
-        <h3>Planos de Saúde</h3>
-        <a href="../producao/index.html">
-          <p>Sou Beneficiário</p>
-          <p>Sou Prestador</p></a
-        >
-      </div>
-      <div>
-        <h3>Contato</h3>
-        <a href="../producao/index.html">
-          <p>Telefones Úteis</p>
-          <p>Enviar Mensagem</p>
-          <p>Trabalhe Conosco</p></a
-        >
-      </div>
-    </div>
-    <script src="../js/script.js"></script>
-  </body>
+		<script src="../js/script.js"></script>
+	</body>
 </html>
