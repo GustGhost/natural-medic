@@ -21,12 +21,19 @@ Esse projeto foi desenvolvido com as seguintes tecnologias
 - <a href = "https://randomuser.me/"> Random User </a>
 -  <a href = "https://dummyjson.com/"> Dummy JSON </a>
 
+### Contas que poderão ser utilizadas no login da aplicação a partir do consumo da API Dummy JSON
+
+- Nome: Lenna | Email: aeatockj@psu.edu | Senha: szWAG6hc
+- Nome: Ewell | Email: ggude7@chron.com | Senha: MWwlaeWcOoF6
+- Nome: Marcel | Email: acharlota@liveinternet.ru | Senha: M9lbMdydMN
+
 ## :computer:Estrutura do projeto
 
 A Natural Medic atualmente possui ao todo 7 páginas funcionais.
 
 - Home page: Página onde se encontra as principais características,serviços e funcionalidades da Natural Medic.<br>
 - Sobre page: Página onde é descrita mais a fundo sobre a infraestrutura e a quantidade de funcionários da empresa.
+- Agendamento page: Página onde é disponibilizado um formulário para realizar um procedimento
 - Contato page: Área do projeto onde se encontra informações sobre o contato com a empresa, tanto por números de telefone, endereço real de uma das clínica e quanto acesso aos formulários sobre os tópicos que deseja abordar com a empresa, além de possuir um telefone para procurar por oportunidades de emprego.
 - Form pages: Páginas onde se encontram os formlários para preencher para entrar em contato com a empresa. 
 - Desubra clínica/ avaliação page: Página onde é possível procurar uma clínica o mais perto possível de sua residência por meio da inserção do CEP, além de mostrar os médicos disponíveis. Além dessa funcionalidade, é possível avaliar nossos atendimentos por meio do preenchimento do formulário na página.
