@@ -32,7 +32,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias
 ## :blue_book:Como utilizar o projeto
 
 - Deve-se acessar o projeto pelo link https://natural-medic-gustghost.vercel.app/;
-&ensp;  &ensp; &ensp; &ensp; &ensp; &ensp;   ou
+&ensp;  &ensp; &ensp; &ensp; &ensp; &ensp;ou
 - Pode acessar o projeto localmente em sua máquina, com os sequintes comando:
 
   Obs: Codigos abaixo recomendado para Visual Studio Code
