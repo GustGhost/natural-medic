@@ -32,6 +32,27 @@ Esse projeto foi desenvolvido com as seguintes tecnologias
 ## :blue_book:Como utilizar o projeto
 
 - Deve-se acessar o projeto pelo link https://natural-medic-gustghost.vercel.app/;
+&ensp;  &ensp; &ensp; &ensp; &ensp; &ensp;   ou
+- Pode acessar o projeto localmente em sua máquina, com os sequintes comando:
+
+  Obs: Codigos abaixo recomendado para Visual Studio Code
+
+  Primeiro clonando o projeto
+      
+    ```bash
+      git clone https://github.com/GustGhost/natural-medic.git
+    ```
+  Segundo acessando o projeto pela ferramenta que deseje acessar o projeto usando:
+       
+    ```bash
+      cd natural-medic
+    ```
+  Terceiro você pode estartar o projeto usando:
+    ```bash
+      Live serve 
+        ou
+      Subindo em qualquer navegador clicando no index.html do projeto que se encontra na raiz do projeto. 
+    ```
 - Deve-se fazer o login utilizando os dados apresentados no exemplo acima;
 - Ao conseguir fazer o login, é possível acessar todas as páginas que já estão concluídas no projeto;
 - Ao concluir o login será redirecionado para a página de informações onde é possível ver o histórico de consultas e o histórico de exames; 
